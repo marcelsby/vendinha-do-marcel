@@ -1,17 +1,7 @@
 @import "variables.css";
 @import "typography.css";
 
-a {
-    color: var(--color-white);
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
-}
-
-a:active {
-    color: var(--color-gray);
-}
-
-header {
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -20,15 +10,15 @@ header {
     padding: 0.5rem;
 }
 
-header img {
+nav img {
     height: 2rem;
 }
 
-header i.ph-list {
+nav i {
     color: var(--color-white);
 }
 
-header div#menu-links {
+nav div#menu-links {
     display: none;
     width: 100%;
     flex-direction: column;
@@ -71,9 +61,9 @@ footer #contact-icons {
     gap: 0.5rem;
 }
 
-footer #contact-icons span {
+.contact-icon {
     background-color: var(--color-white);
-    color: var(--color-orange-600);
+    color: var(--bg-color);
     height: 28px;
     width: 28px;
     border-radius: 10rem;
@@ -82,10 +72,10 @@ footer #contact-icons span {
     justify-content: center;
 }
 
-footer #contact-icons a:nth-child(2) span i {
-    padding-left: 0.1rem;
+.contact-icon:hover, .contact-icon:active {
+    background-color: var(--color-orange-600);
 }
 
-footer > p {
-    font-size: 0.8rem;
+footer #contact-icons a:nth-child(2) span i {
+    padding-left: 0.1rem;
 }

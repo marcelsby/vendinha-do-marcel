@@ -1,13 +1,15 @@
-const menuButton = document.querySelector("#menu-button");
+const menuButton = document.querySelector("#menu-toggle-button");
 
 menuButton.addEventListener("click", () => {
-  const header = document.querySelector("header");
   const menuLinks = document.querySelector("#menu-links");
 
   menuLinks.style.display = menuLinks.style.display != "flex" ? "flex" : "none";
 
   const isMenuOpen = menuLinks.style.display == "flex";
 
-  menuButton.style.color = isMenuOpen ? "#ACACAC" : "#FBFBFB";
-  header.style.borderRadius = isMenuOpen ? "0 0 12px 12px" : "0 0 0 0";
+  if (isMenuOpen) {
+    menuButton.classList.replace("ph-list", "ph-x");
+  } else {
+    menuButton.classList.replace("ph-x", "ph-list");
+  }
 });
