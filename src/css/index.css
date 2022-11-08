@@ -1,5 +1,6 @@
 @import "variables.css";
 @import "typography.css";
+@import "buttons.css";
 
 nav {
     display: flex;
@@ -28,6 +29,39 @@ nav div#menu-links {
 
 /* CSS do "main" */
 
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-orange-600);
+    color: var(--color-white);
+}
+
+header > div {
+    padding: 3rem 8rem 3rem 1.5rem;
+}
+
+header > div h1 {
+    padding-top: 0.25rem;
+    padding-bottom: 1.25rem;
+}
+
+section.highlights {
+    color: var(--color-white);
+    background-color: var(--bg-color);
+}
+
+section.highlights ol li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.numeration {
+    color: var(--color-orange-600);
+    font-weight: 500;
+    font-size: var(--font-lg);
+}
+
 footer {
     background-color: var(--bg-color);
     color: var(--color-white);
@@ -38,7 +72,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1.5rem 0;
+    gap: 1rem;
 }
 
 footer img {
