@@ -1,10 +1,12 @@
 :root {
     --bg-color: #12100E;
+    --color-black-50: #1A1816;
     --color-orange-500: #FF9900;
     --color-orange-600: #FF7A00;
     --color-white: #FBFBFB;
     --color-gray: #766C62;
     --color-brown-100: #823F01;
+    --font-sm: 0.8rem;
     --font-md: 1rem;
-    --font-lg: 1.5rem;
+    --font-lg: 2rem;
 }

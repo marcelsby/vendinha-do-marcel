@@ -18,3 +18,9 @@ h1, h2, h3, h4, h5, h6, strong, em {
 .link:hover, .link:active {
     color: var(--color-gray);
 }
+
+.subtitle {
+    font-size: var(--font-sm);
+    color: var(--color-white);
+    opacity: 60%;
+}

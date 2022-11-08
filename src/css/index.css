@@ -2,6 +2,12 @@
 @import "typography.css";
 @import "buttons.css";
 
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-black-50);
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +34,6 @@ nav div#menu-links {
 }
 
 /* CSS do "main" */
-
 header {
     display: flex;
     align-items: center;
@@ -37,7 +42,9 @@ header {
 }
 
 header > div {
-    padding: 3rem 8rem 3rem 1.5rem;
+    padding-block: 3rem;
+    padding-inline: 1.5rem 7rem;
+    width: 70vw;
 }
 
 header > div h1 {
@@ -46,28 +53,52 @@ header > div h1 {
 }
 
 section.highlights {
+    background-image: url('../assets/images/highlights-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--color-white);
-    background-color: var(--bg-color);
+    padding-inline: 1rem;
+    padding-block: 0.5rem 1rem;
+    text-align: center;
 }
 
-section.highlights ol li {
+.highlight-items {
+    padding-top: 1.25rem;
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
     align-items: center;
+    gap: 4rem;
 }
 
-.numeration {
+.highlight-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    padding-left: 2rem;
+    text-align: start;
+}
+
+.highlight-item p {
+    width: 70vw;
+}
+
+
+.highlight-numeration {
     color: var(--color-orange-600);
     font-weight: 500;
-    font-size: var(--font-lg);
+    font-size: 3rem;
+}
+
+#gradient {
+    height: 54px;
+    background: linear-gradient(0.42deg, #12100E 36.4%, rgba(18, 16, 14, 0) 100.23%);
 }
 
 footer {
     background-color: var(--bg-color);
     color: var(--color-white);
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -111,6 +142,6 @@ footer #contact-icons {
     background-color: var(--color-orange-600);
 }
 
-footer #contact-icons a:nth-child(2) span i {
-    padding-left: 0.1rem;
+footer > p {
+    font-size: var(--font-sm);
 }
