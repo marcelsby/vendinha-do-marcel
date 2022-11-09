@@ -1,15 +1,16 @@
-const menuButton = document.querySelector("#menu-toggle-button");
+const dropdownToggleButton = document.querySelector("#dropdown-toggle-button");
 
-menuButton.addEventListener("click", () => {
-  const menuLinks = document.querySelector("#menu-links");
+dropdownToggleButton.addEventListener("click", () => {
+  const dropdownLinks = document.querySelector("#dropdown-links");
 
-  menuLinks.style.display = menuLinks.style.display != "flex" ? "flex" : "none";
+  dropdownLinks.style.display =
+    dropdownLinks.style.display != "flex" ? "flex" : "none";
 
-  const isMenuOpen = menuLinks.style.display == "flex";
+  const isMenuOpen = dropdownLinks.style.display == "flex";
 
   if (isMenuOpen) {
-    menuButton.classList.replace("ph-list", "ph-x");
+    dropdownToggleButton.classList.replace("ph-list", "ph-x");
   } else {
-    menuButton.classList.replace("ph-x", "ph-list");
+    dropdownToggleButton.classList.replace("ph-x", "ph-list");
   }
 });

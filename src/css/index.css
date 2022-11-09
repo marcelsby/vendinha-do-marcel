@@ -1,6 +1,6 @@
 @import "variables.css";
-@import "typography.css";
 @import "buttons.css";
+@import "typography.css";
 
 body {
     height: 100%;
@@ -25,7 +25,7 @@ nav i {
     color: var(--color-white);
 }
 
-nav div#menu-links {
+#dropdown-links {
     display: none;
     width: 100%;
     flex-direction: column;
