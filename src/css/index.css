@@ -34,6 +34,10 @@ nav div#menu-links {
 }
 
 /* CSS do "main" */
+main {
+    position: relative;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -54,11 +58,11 @@ header > div h1 {
 
 section.highlights {
     background-image: url('../assets/images/highlights-background.png');
-    background-size: cover;
+    background-size: 100vw;
     background-repeat: no-repeat;
     color: var(--color-white);
     padding-inline: 1rem;
-    padding-block: 0.5rem 1rem;
+    padding-block: 0.5rem 6rem;
     text-align: center;
 }
 
@@ -92,8 +96,11 @@ section.highlights {
 }
 
 #gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
     height: 54px;
-    background: linear-gradient(0.42deg, #12100E 36.4%, rgba(18, 16, 14, 0) 100.23%);
+    background: linear-gradient(360deg, #12100E 0%, rgba(18, 16, 14, 0) 79.55%);
 }
 
 footer {
