@@ -33,11 +33,6 @@ nav div#menu-links {
     gap: 0.5rem;
 }
 
-/* CSS do "main" */
-main {
-    position: relative;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -56,7 +51,8 @@ header > div h1 {
     padding-bottom: 1.25rem;
 }
 
-section.highlights {
+/* CSS do "main" */
+section#highlights {
     background-image: url('../assets/images/highlights-background.png');
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -64,6 +60,7 @@ section.highlights {
     padding-inline: 1rem;
     padding-block: 0.5rem 6rem;
     text-align: center;
+    position: relative;
 }
 
 .highlight-items {
@@ -98,9 +95,27 @@ section.highlights {
 #gradient {
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100vw;
     height: 54px;
     background: linear-gradient(360deg, #12100E 0%, rgba(18, 16, 14, 0) 79.55%);
+}
+
+section#about {
+    color: var(--color-white);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-inline: 3rem;
+}
+
+section#about > .button {
+    margin-top: 1rem;
 }
 
 footer {
@@ -145,7 +160,7 @@ footer #contact-icons {
     justify-content: center;
 }
 
-.contact-icon:hover, .contact-icon:active {
+.contact-icon:is(:hover, :active) {
     background-color: var(--color-orange-600);
 }
 
