@@ -2,6 +2,10 @@
 @import "buttons.css";
 @import "typography.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .logo {
     height: 2rem;
 }
@@ -163,6 +167,7 @@ footer #contact-icons {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
 }
 
 .contact-icon:is(:hover, :active) {
@@ -189,6 +194,7 @@ footer #contact-icons {
         padding-block: 0.3rem;
         border-radius: 12px;
         text-decoration: none;
+        transition: 0.5s;
     }
     
     nav #dropdown-toggle-button {
