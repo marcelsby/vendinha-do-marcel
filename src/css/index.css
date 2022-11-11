@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "buttons.css";
 @import "typography.css";
+@import "animations.css";
 
 html {
     scroll-behavior: smooth;
@@ -13,8 +14,8 @@ html {
 body {
     height: 100%;
     max-width: 100%;
-    background-color: var(--color-black-50);
-    animation: introLoad 2s forwards;
+    background-color: var(--bg-color);
+    animation: topDownLoad 2s forwards;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav i {
 }
 
 #dropdown-links {
-    display: none;
+    background-color: var(--bg-color);
     width: 100%;
     flex-direction: column;
     padding: 0.5rem 0;
@@ -63,6 +64,7 @@ header h1 {
 
 /* CSS do "main" */
 section#highlights {
+    background-color: var(--color-black-50);
     background-image: url('../assets/images/highlights-background.png');
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -267,15 +269,5 @@ footer #contact-icons {
 
     footer p#credits {
         grid-area: credits;
-    }
-}
-
-@keyframes introLoad {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }

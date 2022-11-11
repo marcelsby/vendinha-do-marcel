@@ -1,0 +1,19 @@
+@keyframes topDownLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show-flex {
+    display: flex;
+    animation: topDownLoad 1s forwards;
+}
+
