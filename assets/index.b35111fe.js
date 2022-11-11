@@ -404,4 +404,4 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-`,f=l,p=c;f(p);const s=document.querySelector("#dropdown-toggle-button");s.addEventListener("click",()=>{const t=document.querySelector("#dropdown-links");t.style.display=t.style.display!="flex"?"flex":"none",t.style.display=="flex"?s.classList.replace("ph-list","ph-x"):s.classList.replace("ph-x","ph-list")});
+`,f=l,u=c;f(u);const s=document.querySelector("#dropdown-toggle-button");s.addEventListener("click",()=>{const t=document.querySelector("#dropdown-links");t.classList.toggle("hide"),t.classList.toggle("show-flex"),t.classList.contains("show-flex")?s.classList.replace("ph-list","ph-x"):s.classList.replace("ph-x","ph-list")});
