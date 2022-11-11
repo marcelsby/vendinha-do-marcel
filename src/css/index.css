@@ -2,6 +2,10 @@
 @import "buttons.css";
 @import "typography.css";
 
+.logo {
+    height: 2rem;
+}
+
 body {
     height: 100%;
     max-width: 100%;
@@ -14,11 +18,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
-    padding: 0.5rem;
-}
-
-nav img {
-    height: 2rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.8rem;
+    min-height: 2rem;
 }
 
 nav i {
@@ -33,6 +35,10 @@ nav i {
     gap: 0.5rem;
 }
 
+#desktop-nav-links {
+    display: none;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -42,11 +48,10 @@ header {
 
 header > div {
     padding-block: 3rem;
-    padding-inline: 1.5rem 7rem;
-    width: 70vw;
+    padding-inline: 3rem 7rem;
 }
 
-header > div h1 {
+header h1 {
     padding-top: 0.25rem;
     padding-bottom: 1.25rem;
 }
@@ -152,8 +157,8 @@ footer #contact-icons {
 .contact-icon {
     background-color: var(--color-white);
     color: var(--bg-color);
-    height: 28px;
-    width: 28px;
+    height: 1.7em;
+    width: 1.7em;
     border-radius: 10rem;
     display: flex;
     align-items: center;
@@ -164,6 +169,82 @@ footer #contact-icons {
     background-color: var(--color-orange-600);
 }
 
-footer > p {
+#credits {
     font-size: var(--font-sm);
+}
+
+@media screen and (min-width: 1000px) {
+    .logo {
+        height: 2.5rem;
+    }
+
+    nav {
+        height: 2.5rem;
+    }
+
+    nav a.button-orange {
+        color: var(--color-white);
+        font-weight: 500;
+        padding-inline: 0.8rem;
+        padding-block: 0.3rem;
+        border-radius: 12px;
+        text-decoration: none;
+    }
+    
+    nav #dropdown-toggle-button {
+        display: none;
+    }
+
+    nav #desktop-nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header {
+        min-height: 700px;
+        height: 85vh;
+    }
+
+    header > div {
+        padding-left: 4rem;
+    }
+
+    header h1 {
+        max-width: 450px;
+    }
+
+    section#highlights {
+        background-image: url('../assets/images/highlights-background-desktop.png');
+    }
+
+    .highlight-items {
+        align-items: flex-start;
+        padding-block: 5rem;
+        padding-inline: 10rem;
+        gap: 12rem;
+    }
+
+    .highlight-item {
+        flex-direction: row;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    li.highlight-item:nth-child(odd) {
+        align-self: flex-end;
+        text-align: right;
+        flex-flow: row-reverse;
+    }
+
+    section#about {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-inline: 10rem;   
+        gap: 2rem;
+    }
+
+    #credits {
+        font-size: var(--font-sm-desktop);
+    }
 }

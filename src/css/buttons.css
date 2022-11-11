@@ -21,6 +21,22 @@ a.button-dark {
     background-color: var(--bg-color);
 }
 
+a.button-dark:hover {
+    border-color: var(--color-black-50);
+    background-color: var(--color-black-50);
+}
+
 a.button-orange {
     background-color: var(--color-orange-600);
+}
+
+a.button-orange:hover {
+    border-color: var(--color-orange-500);
+    background-color: var(--color-orange-500);
+}
+
+@media screen and (min-width: 1000px) {
+    a.button {
+        width: 200px;
+    }
 }

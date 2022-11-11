@@ -31,3 +31,21 @@ h2, h3, h4, h5, h6 {
     color: var(--color-white);
     opacity: 60%;
 }
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: var(--font-sm-desktop);
+    }
+
+    h1 {
+        font-size: var(--font-lg-desktop);
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-size: var(--font-md-desktop);
+    }
+
+    .subtitle {
+        font-size: var(--font-sm-desktop);
+    }
+}

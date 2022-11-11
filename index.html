@@ -8,8 +8,8 @@
 </head>
 
 <body>
-  <nav>
-    <img src="/logo.svg" alt="logo vendinha do marcel">
+  <nav> 
+    <img class="logo" src="/logo.svg" alt="logo vendinha do marcel">
     <button>
       <i id="dropdown-toggle-button" class="ph-list ph-xl"></i>
     </button>
@@ -18,7 +18,15 @@
         <a href="#" class="link">Produtos</a>
       </li>
       <li>
-        <a href="#" class="link">Sobre</a>
+        <a href="#about" class="link">Sobre</a>
+      </li>
+    </ul>
+    <ul id="desktop-nav-links">
+      <li>
+        <a href="#about" class="link">Sobre</a>
+      </li>
+      <li>
+        <a href="#" class="button-orange">Produtos</a>
       </li>
     </ul>
   </nav>
@@ -68,7 +76,7 @@
     </section>    
   </main>
   <footer>
-    <img src="/logo.svg" alt="logo vendinha do marcel">
+    <img class="logo" src="/logo.svg" alt="logo vendinha do marcel">
     <section id="contacts">
       <p>Contatos</p>
       <div id="contact-icons">
@@ -80,7 +88,7 @@
         </a>
       </div>
     </section>
-    <p>Feito por <a href="#" class="link">Marcel Barbosa</a> & <a href="#" class="link">Celina Balz</a></p>
+    <p id="credits">Feito por <a href="#" class="link">Marcel Barbosa</a> & <a href="#" class="link">Celina Balz</a></p>
   </footer>
   <script src="https://unpkg.com/phosphor-icons@1.4.1"></script>
   <script type="module" src="./src/main.js"></script>

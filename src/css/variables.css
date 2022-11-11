@@ -9,4 +9,7 @@
     --font-sm: 0.8rem;
     --font-md: 1rem;
     --font-lg: 2rem;
+    --font-sm-desktop: 1.3rem;
+    --font-md-desktop: 1.5rem;
+    --font-lg-desktop: 4rem;
 }
