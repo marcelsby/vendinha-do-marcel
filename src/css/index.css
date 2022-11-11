@@ -14,6 +14,7 @@ body {
     height: 100%;
     max-width: 100%;
     background-color: var(--color-black-50);
+    animation: introLoad 2s forwards;
 }
 
 nav {
@@ -266,5 +267,15 @@ footer #contact-icons {
 
     footer p#credits {
         grid-area: credits;
+    }
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
