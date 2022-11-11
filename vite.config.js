@@ -1,3 +1,3 @@
 export default {
-  base: "/vendinha-do-marcel",
+  base: "/vendinha-do-marcel/",
 };
