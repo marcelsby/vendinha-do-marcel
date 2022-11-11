@@ -127,14 +127,14 @@ footer {
     background-color: var(--bg-color);
     color: var(--color-white);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1.5rem 0;
-    gap: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-footer img {
+footer#logo {
     height: 2rem;
 }
 
@@ -246,5 +246,19 @@ footer #contact-icons {
 
     #credits {
         font-size: var(--font-sm-desktop);
+    }
+
+    footer {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "logo credits contacts";
+    }
+
+    footer section#contacts {
+        grid-area: contacts;
+    }
+
+    footer p#credits {
+        grid-area: credits;
     }
 }
