@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-    Landing page responsiva criada para divulgar a loja onde estou anunciando os meus produtos usados. Acesse ela clicando <a href="https://marcelsby.github.io/vendinha-do-marcel">aqui</a>.
+    Landing page responsiva criada para divulgar a loja onde estou anunciando os meus produtos usados. Acesse ela clicando <a href="https://marcelsby.github.io/vendinha-do-marcel" target="_blank">aqui</a>.
 </p>
 
 <p align="center">
