@@ -46,9 +46,11 @@ nav i {
 }
 
 header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assets/images/header-background.jpg');
     display: flex;
     align-items: center;
-    background-color: var(--color-orange-600);
     color: var(--color-white);
 }
 
@@ -211,6 +213,7 @@ footer #contact-icons {
     }
 
     header {
+        background-image: url('../assets/images/header-background-desktop.jpg');
         min-height: 700px;
         height: 85vh;
     }
